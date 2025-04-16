@@ -825,6 +825,29 @@ ul.filebird-block-filebird-gallery{margin:auto!important;padding:0!important;wid
 						</div>
 				</div>
 				</div>
+			<!-- WhatsApp Chat Trigger -->
+			<div id="chat-trigger" style="position: fixed; bottom: 25px; right: 25px; z-index: 9999; display: flex; align-items: center; font-family: sans-serif; cursor: pointer;">
+				<!-- Label (no background) -->
+				<div style="color: #333; font-size: 14px; margin-right: 10px;">
+				Need Help? Chat with us
+				</div>
+				
+				<!-- WhatsApp Icon -->
+				<div style="width: 50px; height: 50px; background-color: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="28" height="28">
+				</div>
+			</div>
+			
+			<!-- Hidden WhatsApp Chat Box -->
+			<div id="chat-box" style="display: none; position: fixed; bottom: 90px; right: 25px; z-index: 9999; width: 300px; background: #fff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); padding: 15px; font-family: sans-serif;">
+				<p style="margin: 0 0 10px;"><strong>Start a Conversation</strong></p>
+				<p style="font-size: 14px;">Hi! Click below to chat on <strong>WhatsApp</strong> with our team.</p>
+				<a href="https://wa.me/97430442704" target="_blank" style="display: inline-block; background: #25D366; color: #fff; padding: 10px 15px; text-decoration: none; border-radius: 5px; font-size: 14px;">
+				Chat on WhatsApp
+				</a>
+			</div>
+  
+
 		<div class="elementor-element elementor-element-596af874 e-con-full e-flex e-con e-child" data-id="596af874" data-element_type="container">
 				<div class="elementor-element elementor-element-2f1072bc elementor-view-default elementor-widget elementor-widget-icon" data-id="2f1072bc" data-element_type="widget" data-widget_type="icon.default">
 				<div class="elementor-widget-container">
@@ -1824,9 +1847,14 @@ var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPr
 		var elementskit = {
 			resturl: 'https://ryboahaima.com/wp-json/elementskit/v1/',
 		}
-
-		
-</script>
+	</script>
+  <!-- Toggle Script -->
+  <script>
+	document.getElementById('chat-trigger').addEventListener('click', function () {
+	  const box = document.getElementById('chat-box');
+	  box.style.display = box.style.display === 'none' ? 'block' : 'none';
+	});
+  </script>
 <script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://ryboahaima.com/wp-content/cache/min/1/wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js?ver=1733306588" id="ekit-widget-scripts-js" data-rocket-defer defer></script>
 <script type="rocketlazyloadscript" data-rocket-src="https://ryboahaima.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.25.3" id="elementor-pro-webpack-runtime-js" data-rocket-defer defer></script>
 <script type="rocketlazyloadscript" data-rocket-src="https://ryboahaima.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.25.11" id="elementor-webpack-runtime-js" data-rocket-defer defer></script>
